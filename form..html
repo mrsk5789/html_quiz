@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height : 20px;
+            margin-top : 15px;
+            /*background-color: #99FFFF;*/
+        }
+        #shape{
+            width : 180px;
+            height: 28px;
+            border-radius: 5px;
+        }
+        table{
+            text-align: left;
+        }
+        td{
+            padding-left: 5px;
+        }
+        form{
+            border: 1px solid;
+            border-radius: 5px;
+            padding : 15px 15px 25px 15px;
+            width : 52%;
+        }
+        button{
+            width : 40px;
+            height: 40px;
+            margin-top : 10px;
+        }
+        aside{
+            width :15%;
+            float: left;
+        }
+        .greylist {
+            width: 50px;
+            height: 30px;
+            font-weight: 900;
+            color: white;
+            text-align: center;
+            background: grey;
+            border: solid 2px white;
+            border-radius: 5px;
+        }
+        .gradient {
+            width: 80px;
+            height: 30px;
+            font-weight: 900;
+            color: white;
+            text-align: center;
+            background: linear-gradient( to bottom, grey, black );
+            border: solid 2px white;
+            border-radius: 5px;
+        }
+
+        .left {text-align: left;}
+        .right {  float: right;}
+        .center { text-align: center;}
+
+        a {
+            color:black;
+            text-decoration-line : none;
+        }
+        h2 { font-weight: border; }
+        .hr1 {  border: 0;
+                height: 2px;
+                background:  #d3d3d3;
+        }
+        .grey { 
+                color: #727272;
+        }
+        tr{
+            width :85%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="ppp.jpg" width="200px" height="50"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input width : 180px; height: 28px;></td>
+        </tr>  
+</table>
+<aside>
+     <ul class="nav flex-column">
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="#">home</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">ecommence</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">project</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">CRM</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">social feed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">apps</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">ecommence</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link disabled" aria-disabled="true">CRM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ecommence</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">project</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link disabled" aria-disabled="true">CRM</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="#">social feed</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">apps</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">ecommence</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">CRM</a>
+           </li>
+    </ul> 
+</aside>
+<form>
+    <table>
+        <tr>
+            <td>
+                <h1> code </h1> 
+                <div><label>코드그룹<span style="color : red">*</span></label></div>
+                <select id = "shape">
+                    <option value="" selected disabled hidden>선택하세요</option>
+                    <option value="1">옵션1</option>
+                    <option value="2">옵션2</option>
+                    <option value="3">옵션3</option>
+                    <option value="4">옵션4</option>
+                    <option value="5">옵션5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>코드<span style="color : red">*</span></label>
+                </div>
+                <input type="text" placeholder="자동생성" id = "shape" disabled >
+            </td>                
+            <td>
+                <div>
+                    <label>코드(ANOTHER)</label>
+                </div>
+                <input type="text" placeholder="영대소문자 숫자" id = "shape">                    
+            </td>
+            <td>
+                <div>
+                    <label>코드 이름<span style="color : red">*</span></label>
+                </div>
+                <input type="text" placeholder="한글, 영대소문자 숫자" id = "shape">
+            </td>
+            <td>
+                <div>
+                    <label>코드 이름(영문)<span style="color : red">*</span></label>
+                </div>
+                <input type="text" placeholder="영대소문자 숫자" id = "shape">                    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div><label>사용여부<span style="color : red">*</span></label></div>
+                <select id = "shape">
+                    <option value="1">사용</option>
+                    <option value="2">미사용</option>
+                </select>
+            </td>
+            <td>
+                <div>
+                    <label>순서<span style="color : red">*</span></label>
+                </div>
+                <input type="text" id = "shape">   
+            </td>    
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>
+                    <label>설명</label>
+                </div>
+                <textarea rows="4" cols="50"></textarea>  
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>다국어1</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>                
+            <td>
+                <div>
+                    <label>다국어2</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>  
+            <td>
+                <div>
+                    <label>다국어3</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>  
+            <td>
+                <div>
+                    <label>다국어4</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>     
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>다국어5</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>                
+            <td>
+                <div>
+                    <label>다국어6</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>  
+            <td>
+                <div>
+                    <label>다국어7</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>  
+            <td>
+                <div>
+                    <label>다국어8</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>     
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>예비1(VARCHAR TYPE)</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>                
+            <td>
+                <div>
+                    <label>예비2(VARCHAR TYPE)</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>  
+            <td>
+                <div>
+                    <label>예비3(VARCHAR TYPE)</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>  
+            <td>
+                <div>
+                    <label>예비4(VARCHAR TYPE)</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>     
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>예비1(INT TYPE)</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>                
+            <td>
+                <div>
+                    <label>예비2(INT TYPE)</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>  
+            <td>
+                <div>
+                    <label>예비3(INT TYPE)</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>  
+            <td>
+                <div>
+                    <label>예비4(INT TYPE)</label>
+                </div>
+                <input type="text" id = "shape">
+            </td>     
+        </tr>
+    </table>
+        
+</form>
+</body>
+</html>
